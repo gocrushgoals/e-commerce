@@ -20,7 +20,7 @@ router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try {
-    const productData = await Product.findByPk(req.params.id, { include: [Category and Tag] });
+    const productData = await Product.findByPk(req.params.id, { include: [Category, Tag] });
     res.status(200).json(productData);
 
   } catch (error) {
@@ -31,18 +31,11 @@ router.get('/:id', async (req, res) => {
 });
 
 // create new product
-router.post('/', (req, res) => {
-  req.body.price = parseFloat(req.body.price);
-  {
-    product_name: "Cargo Shorts",
-    price: 29.99,
-    stock: 22,
-    tagIds: [1, 2, 3, 4]
-  }
-  
+router.post('/', (req, res) => {  
     
   /* req.body should look like this...
     {
+      category_id: 7,
       product_name: "Basketball",
       price: 200.00,
       stock: 3,
