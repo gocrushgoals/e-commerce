@@ -2,7 +2,7 @@
 
 ## Description
 
- View walkthrough:
+ View walkthrough: https://drive.google.com/file/d/1WRAypq7d9a9d9HzkZtUK3apbr_Fs8LhL/view?usp=sharing 
 
 
 
@@ -37,7 +37,10 @@ Clone the code from Github at https://github.com/gocrushgoals/e-commerce
 
 ## Usage
 
-Run the application with 
+Initialize the application by sourcing the seeds by using the terminal command "npm run seeds" 
+Connect the server by using the terminal command "node server.js"
+Use a program like Insomnia or Postman to run the get, post, put, and delete routes to modify the products, tags, id, and categories. 
+You can reference the routes in the /routes folder to see commands available.
 
 ## Credits
 
@@ -48,4 +51,4 @@ NMP Documentation
 
 ## License
 
-See the repository for licensing information
+See the repository for licensing information.
